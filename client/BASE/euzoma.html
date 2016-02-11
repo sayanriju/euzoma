@@ -1,0 +1,149 @@
+<head>
+  <title>euzoma</title>
+</head>
+
+<body>
+  <div class="wrapper" id="main-index">
+    <div class="navbar navbar-default navbar-red navbar-static-top new-style" id="app-navbar" style="background:black">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="navbar-brand" style="background:black">
+            <a class="logo-image" href="http://euzoma.com/"></a>
+          </div>
+          <button class="navbar-toggle collapsed" data-target="#app-navbar-collapse" data-toggle="collapse">
+            <span class="icon hamburger-menu"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="app-navbar-collapse" style="background:black">
+          <ul class="nav navbar-nav navbar-right" style="background:black">
+            <li class="dropdown hidden unconfirmed-user-header">
+              <a class="header" data-toggle="dropdown" href="#">
+                <span class="icon icon-warning"></span> Unconfirmed Account
+                <span class="caret visible-sm-inline-block"></span>
+              </a>
+              <ul class="dropdown-menu no-close-on-click">
+                <div class="confirm-dropdown">
+                  <div>
+                    Click on the confirmation link in the email that Euzoma sent to <strong class="confirm-email-address"></strong>.
+                  </div>
+                  <div class="margin_10t">
+                    <button class="btn resend-confirmation" id="resend-confirmation-email-button">Resend Confirmation Email</button>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="hide-on-mobile">
+              <a class="header" href="http://euzoma.com/algorithms">Try Euzoma</a>
+            </li>
+            <li class="dropdown">
+              <a class="header" data-toggle="dropdown" href="#">
+        Plan
+        <span class="caret visible-sm-inline-block"></span>
+      </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="http://euzoma.com/open">Learn More</a>
+                </li>
+                <li>
+                  <a href="http://euzoma.com/leaderboard">Wealth Planner</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="header" href="http://euzoma.com/chart/">Markets</a>
+            </li>
+            <li class="show-on-mobile">
+              <a class="header" href="http://euzoma.com/about">About Euzoma</a>
+            </li>
+            <li class="visible-desktop">
+              <a class="header" href="http://euzoma.com/research">Research</a>
+            </li>
+            <li class="visible-desktop">
+              <a class="header" href="http://euzoma.com/algorithms">Algorithms</a>
+            </li>
+            <li class="show-on-mobile">
+              <a class="header" href="http://euzoma.com/algorithms">Live Algorithms</a>
+            </li>
+            <li class="dropdown hide-on-mobile">
+              <a class="header" data-toggle="dropdown" href="#">Crowd
+        <span class="caret visible-sm-inline-block"></span>
+      </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="http://euzoma.com/faq">Learn More</a>
+                </li>
+                <li>
+                  <a href="http://euzoma.com/help">Community</a>
+                </li>
+                <li>
+                  <a class="open-feedback-link" href="http://euzoma.com/ideas">
+            Ideas
+          </a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="http://euzoma.com/login/" class="header unregistered-user-action">Log In</a>
+            </li>
+            <li class="show-on-mobile">
+              <a href="http://euzoma.com/accounts/register/" class="header unregistered-user-action">Sign Up</a>
+            </li>
+            <li>
+              <a class="new-btn transparent small sign-up-btn hidden-xs" href="http://euzoma.com/accounts/register/">
+          Sign Up
+        </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-2 col-md-2 col-sm-3">
+    <nav class="navbar navbar-default left-menu" role="navigation">
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <span class="group-title">Favourites</span>
+            <ul class="nav navbar-nav">
+              <li><a href="http://euzoma.com/news">News Feed</a></li>
+              <li><a href="http://euzoma.com/launchpad">Launchpad</a></li>
+              <li><a href="http://euzoma.com/portfolio">Portfolio</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="group-title">Markets</span>
+            <ul class="nav navbar-nav">
+              <li><a href="http://euzoma.com/chart/">Charts</a></li>
+              <li><a href="http://euzoma.com/macro">Macro</a></li>
+              <li><a href="http://euzoma.com/fundamentals">Fundamentals</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="group-title">Trade</span>
+            <ul class="nav navbar-nav">
+              <li><a href="http://euzoma.com/buysell">Buy/ Sell</a></li>
+              <li><a href="http://euzoma.com/blotter">Blotter</a></li>
+              <li><a href="http://euzoma.com/brokers">Brokers</a></li>
+              <li><a href="http://euzoma.com/found_transfer">Fund transfer</a></li>
+            </ul>
+          </li>
+          <li><a href="http://euzoma.com/menu">Main Menu</a></li>
+          <li><a href="http://euzoma.com/invite">Invite Friends</a></li>
+          <li><a href="http://euzoma.com/help">Help</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+
+  {{> app_layout}}
+
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>

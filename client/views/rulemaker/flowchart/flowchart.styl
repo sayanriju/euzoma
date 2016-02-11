@@ -1,0 +1,178 @@
+/***********************  VARIABLE DEFS   ***************************/
+$diagramHeight = 480px;
+
+// Node Colors
+.Price
+  background-color: #cc05c4
+[class*='Indicator']
+  background-color: #1672aa
+[class*='Signal']
+  background-color: #329571
+.Order
+  background-color: #8432af
+
+/***********************************************************************/
+nodeShadow(n=1px, borderColor=black, shadowColor=black)
+  border: 1px solid borderColor;
+
+  -webkit-box-shadow: -1px 1px 11px n shadowColor;
+  -moz-box-shadow: -1px 1px 11px n shadowColor;
+  box-shadow: -1px 1px 11px n shadowColor;
+
+// Set Node Colors
+// for type in Indicator Order Signal Price
+//   .{type}
+//     background: ${type}Color
+
+// body
+//   background-image: url(img/linen.png)
+
+#diagramContainer
+  background-image: url(img/old_mathematics.png)
+  padding: 20px;
+  width:100%;
+  min-height: $diagramHeight;
+  resize:both;
+  overflow: auto;
+  border: 2px solid gray;
+  /*overflow: auto;*/
+  position: relative;
+  &.no_selection
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+  // &.connectionModeOn
+  //   border: 5px solid blue;
+  //     .node:not(.unselectable)
+  //       cursor: pointer;
+  //     .node.active
+  //       cursor: pointer;
+  & .welcomeMessage
+    vertical-align: middle;
+    font-size: 20pt;
+    font-weight: bolder
+    margin: 0 auto;
+    text-align: center;
+    height: $diagramHeight
+    line-height: @height - 50px
+    color: rgb(153, 144, 144)
+  &.connectionModeOn
+    border: 3px solid blue !important;
+    & .node:not(.cantBeDest)
+      cursor: pointer;
+      &:hover
+        border: 1px solid black;
+        nodeShadow(5px)
+
+
+.node
+  position: absolute;
+  nodeShadow()
+  z-index: 999
+  height:100px;
+  min-width: 100px;
+  padding: 5px;
+  font-weight: bold;
+  /*border: 1px solid blue;*/
+  /*color:white;*/
+  text-align: center;
+  cursor: move;
+  /*cursor: grab;
+  cursor: -webkit-grab;*/
+  border-radius: 11px;
+  /*font-size: 50% !important;*/
+  &.cantBeDest
+    // background: rgba(212, 208, 219, 0.57);
+    opacity: .5;
+    text-decoration: line-through;
+    cursor: not-allowed;
+    &.currentNode
+      // border: 3px solid black;
+      opacity: 1;
+
+
+.block
+  position: absolute;
+
+.node-info
+  padding:5%;
+  color: white;
+  /*line-height: 70px;*/
+  & strong
+    border-bottom: 1px dotted white;
+
+.currentNode
+  height: 100px;
+  border: 1px solid black;
+  nodeShadow(5px, black, #E8EA4D)
+
+
+.node-bar
+  width: 100px;
+  // position: relative;
+  // top: -111px;
+  // left: -0px;
+  // color: white;
+  font-weight: bolder
+  border: 1px solid black;
+  padding: 0;
+  border-radius: 5px;
+  background: rgb(255, 236, 237);
+  min-height: 20px;
+  line-height: 2px;
+  vertical-align: middle
+  & i
+    max-width: 10%;
+    margin: 5px;
+    &:not(.text-muted):hover
+      color:blue;
+    &.fa
+      cursor: pointer;
+    &.fa.text-muted
+      cursor: not-allowed;
+
+/********** palette *****************/
+#paletteContainer
+  // margin: 3em;
+
+#klassList
+  font-weight: bold
+  font-size: 12pt
+  & optgroup[label]
+    font-weight: normal
+    font-size: 14pt;
+    font-style: italic
+    & option
+      font-weight: bold
+      font-size: 12pt
+
+#addableNodeList
+  min-height:  $diagramHeight + 40px; // account for the padding!
+  max-height:  $diagramHeight + 40px;
+  overflow: auto;
+  // border: 1px solid black;
+  // padding: 20px auto;
+  &  ul.tree
+    display: none;
+  & label.tree-toggler
+    cursor: pointer;
+    padding: 3px 11px;
+    color: white;
+    &.subKlass
+      color: black;
+      font-style: italic;
+      text-decoration: underline
+  & label.tree-toggler > i.glyphicon
+    margin-right: 5px;
+
+.addableNode
+  // padding: 11px;
+  color: black;
+  font-weight: bold
+  cursor: pointer
+  &:hover
+    font-style: italic
+    // text-decoration: underline
+    // padding-left: 1em
+    text-align: center

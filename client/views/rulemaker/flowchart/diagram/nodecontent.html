@@ -1,0 +1,16 @@
+<template name="nodeContent">
+    <!-- <h4>{{labelType type}}</h4> -->
+    <div class="row node-info">
+      <strong>{{label}}</strong>
+      <br/>
+      <small>({{type}})</small>
+    </div>
+    <!-- {{#if showNodeBar}} -->
+    <div class="node-bar" style="{{#unless showNodeBar}}display:none;{{/unless}}">
+      <i class="editLabel fa fa-font" data-node-id='{{_id}}' data-toggle="tooltip" title="Edit Label"></i>
+      <i class="editProps fa fa-list" data-node-id='{{_id}}' data-toggle="tooltip" title="Edit Properties"></i>
+      <i class="connectNode fa fa-long-arrow-right {{#if cantBeSrc}}text-muted cantBeSrc{{/if}}" data-node-id='{{_id}}' data-toggle="tooltip" title="Connect"></i>
+      <i class="deleteNode fa fa-trash" data-node-id='{{_id}}' data-toggle="tooltip" title="Delete"></i>
+    </div>
+    <!-- {{/if}} -->
+</template>

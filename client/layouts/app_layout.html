@@ -1,0 +1,11 @@
+<template name="app_layout">
+  {{#unless readyToRoll}}
+    {{> spinner}}
+  {{else}}
+    {{#unless currentUser}}
+      {{> loginForm}}
+    {{else}}
+      {{> Template.dynamic template=page}}
+    {{/unless}}
+  {{/unless}}
+</template>
