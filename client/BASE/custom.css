@@ -1,0 +1,129 @@
+.mg-50-0 {
+    margin: 50px 0;
+}
+
+.mg-top-50 {
+    margin-top: 50px;
+}
+
+.mg-btm-50 {
+    margin-bottom: 50px;
+}
+
+.mg-100-0 {
+    margin: 100px 0;
+}
+
+.mg-top-100 {
+    margin-top: 100px;
+}
+
+.mg-bt-100 {
+    margin-bottom: 100px;
+}
+
+.mg-100-auto {
+    margin: 100px auto;
+}
+
+.width-form-field {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.width-login-btn {
+    width: 445px;
+}
+
+.lost-pswd {
+    margin-top: 6px;
+}
+
+@media (max-width: 420px) {
+    .width-form-field {
+        width: 100%;
+    }
+
+    .width-login-btn {
+        width: 100%;
+    }
+
+    .double-feature-block .feature-image {
+        margin-top: -20px;
+    }
+
+    .double-feature-block .feature-title {
+        max-width: 60px;
+    }
+
+    .homepage .title-pane .page-subtitle-row {
+        padding-bottom: 3%;
+    }
+}
+
+@media (max-width: 660px) {
+    .width-login-btn {
+        clear: both;
+    }
+}
+
+@media (max-width: 768px) {
+    #app-navbar.new-style.navbar-red .container-fluid {
+        background-color: transparent;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .left-menu .navbar-collapse {
+        height: auto;
+        border-top: 0;
+        box-shadow: none;
+        max-height: none;
+        padding-left:0;
+        padding-right:0;
+    }
+    .left-menu .navbar-collapse.collapse {
+        display: block !important;
+        width: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+    .left-menu .navbar-collapse.in {
+        overflow-x: visible;
+    }
+
+    .left-menu .navbar {
+        max-width:300px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .left-menu .navbar-nav {
+        padding-left: 25px;
+    }
+
+    .left-menu .navbar-nav,
+    .left-menu .navbar-nav > li,
+    .left-menu .navbar-left,
+    .left-menu .navbar-right,
+    .left-menu .navbar-header {
+        float:none !important;
+    }
+
+    .left-menu .navbar-right .dropdown-menu {
+        left:0;
+        right:auto;
+    }
+
+    .left-menu .navbar-collapse .navbar-nav.navbar-right:last-child {
+        margin-right: 0;
+    }
+    .left-menu .navbar-nav>li>a {
+        padding: 5px 0px;
+    }
+}
+
+.typeahead-list {
+    max-height: 350px;
+    overflow-x: scroll;
+}
