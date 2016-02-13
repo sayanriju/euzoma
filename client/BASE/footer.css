@@ -1,0 +1,210 @@
+.footer.new-style {
+  background-color: #1e2024;
+  padding-top: 125px;
+  padding-bottom: 85px;
+  font-family: "ff-sero-web";
+  margin-top:2em;
+}
+
+@media (max-width: 767px) {
+  .footer.new-style {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.footer.new-style .main-footer {
+  display: block;
+}
+
+@media (max-width: 1069px) {
+  .footer.new-style .main-footer {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer.new-style .main-footer {
+    display: none !important;
+  }
+}
+
+.footer.new-style .mobile-footer {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .footer.new-style .mobile-footer {
+    display: block !important;
+  }
+}
+
+.footer.new-style .footer-content>.row {
+  margin-bottom: 50px;
+}
+
+.footer.new-style .title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer.new-style .footer-row {
+  margin-bottom: 18px;
+}
+
+.footer.new-style .footer-row a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #989ea9;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.footer.new-style .footer-row a:hover {
+  color: #989ea9;
+}
+
+.footer.new-style .copyright {
+  color: #989ea9;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer.new-style .feedback-email {
+  text-align: right;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: -6px;
+}
+
+.footer.new-style .feedback-email>a {
+  color: #989ea9;
+}
+
+@media (max-width: 767px) {
+  .mobile-footer {
+    text-align: center;
+    padding: 75px 0px;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .mobile-footer .mobile-nav-row {
+    padding-bottom: 14px;
+  }
+
+  .mobile-footer .mobile-nav-row p {
+    margin: 0px;
+  }
+
+  .mobile-footer .mobile-nav-row a {
+    color: #fff;
+  }
+
+  .mobile-footer .mobile-nav-row a:hover,
+  .mobile-footer .mobile-nav-row a:focus,
+  .mobile-footer .mobile-nav-row a:active,
+  .mobile-footer .mobile-nav-row a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .mobile-footer .mobile-nav-row:last-child {
+    padding-bottom: 0px;
+  }
+
+  .mobile-footer .secondary-links {
+    margin-top: 40px;
+    color: #989ea9;
+  }
+
+  .mobile-footer .secondary-links a {
+    color: #989ea9;
+  }
+
+  .mobile-footer .secondary-links a:hover,
+  .mobile-footer .secondary-links a:focus,
+  .mobile-footer .secondary-links a:active,
+  .mobile-footer .secondary-links a:visited {
+    color: #989ea9;
+    text-decoration: none;
+  }
+}
+
+.new-btn-footer {
+  border-radius: 2px;
+  padding: 13px 35px 12px 35px;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0.01s;
+  -moz-transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -moz-transition-delay: 0.01s;
+  -o-transition-property: all;
+  -o-transition-duration: 0.25s;
+  -o-transition-timing-function: ease-in-out;
+  -o-transition-delay: 0.01s;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.01s;
+}
+
+.new-btn-footer:visited {
+  text-decoration: none;
+}
+
+.new-btn-footer:hover {
+  text-decoration: none;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0.01s;
+  -moz-transition-property: all;
+  -moz-transition-duration: 0.25s;
+  -moz-transition-timing-function: ease-in-out;
+  -moz-transition-delay: 0.01s;
+  -o-transition-property: all;
+  -o-transition-duration: 0.25s;
+  -o-transition-timing-function: ease-in-out;
+  -o-transition-delay: 0.01s;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.01s;
+  cursor: pointer;
+}
+
+.new-btn-footer:link {
+  text-decoration: none;
+}
+
+.new-btn-footer.red-on-white {
+  background-color: #c50000;
+  color: #fff;
+}
+
+.new-btn-footer.red-on-white:visited {
+  color: #fff;
+}
+
+.new-btn-footer.red-on-white:hover {
+  background-color: #9d0000 !important;
+  color: #fff;
+}
+
+.new-btn-footer.red-on-white:link {
+  color: #fff;
+}
