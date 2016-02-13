@@ -942,7 +942,7 @@ button:hover {
 }
 
 #app-navbar.new-style.navbar-red .container-fluid .navbar-header .navbar-brand .logo-image {
-  background: url("logo-current-ko.png") no-repeat;
+  background: url("/img/logo-current-ko.png") no-repeat;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
