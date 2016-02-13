@@ -1,5 +1,6 @@
 <template name="diagram">
-  <div id="diagramContainer" class="row no_selection {{#if connectionModeOn}}connectionModeOn{{/if}}" style="border:1px solid black;">
+  <div class="row">
+  <div id="diagramContainer" class="no_selection {{#if connectionModeOn}}connectionModeOn{{/if}}" style="border:1px solid black;">
     {{#if showWelcomeMessage}}
     <div class="welcomeMessage">
       Click on the <i class='fa fa-sitemap'></i> icon above to add some Nodes!
@@ -11,5 +12,6 @@
       </div>
     {{/each}}
   </div>
-  <div>&nbsp;</div>
+</div>
+<div class='row'>&nbsp;</div>
 </template>
