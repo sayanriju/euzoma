@@ -15,7 +15,8 @@ Meteor.methods
     unless Meteor.userId()
       throw new Meteor.Error("not-logged-in", "You need to be logged in to do this")
 
-    if obj.ruleID?  ## INSERT mode
+    unless obj.ruleID?  ## INSERT mode
+      console.log 'insert mode'
       obj.name = "Rule#"+Random.hexString(6)
       obj.savedAt = new Date()
       obj.userId = Meteor.userId()
@@ -26,6 +27,7 @@ Meteor.methods
 
     else          ## UPDATE Mode
       ## Check if same user's rule
+      console.log 'update mode'
       if Rules.findOne({_id: obj.ruleID})?.userId is Meteor.userId()
         obj.savedAt = new Date()
         obj.hasResult = false

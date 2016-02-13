@@ -62,11 +62,13 @@ Template.diagram.onRendered ->
 
 
 Template.diagram.helpers
-  welcomeMessage: ->
-    unless localNodes.find({}).count()
-      "To Begin, Just Add Some Nodes!"
-    else
-      ""
+  showWelcomeMessage: ->
+    not localNodes.find({}).count()
+    #   "To Begin, Just Add Some Nodes!" +
+    #   "<br/>" +
+    #   "<small>Click on the <i class='fa fa-sitemap'></i> icon above</small>"
+    # else
+    #   ""
 
   nodes: ->
     return localNodes.find({})

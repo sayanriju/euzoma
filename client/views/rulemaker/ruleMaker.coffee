@@ -72,6 +72,12 @@ Template.ruleMaker.events
       if newName? and newName isnt oldName
         Rules.update  {_id: Session.get("currentRuleID")},{$set:{name: newName}}
 
+  "click #addNode": (e, t) ->
+    Modal.show('addNodeModal')
+
+  "click #addData": (e, t) ->
+    Modal.show('addDataModal')
+
   "click #viewResults": (e, t) ->
     unless $(e.target).hasClass("disabled")
       unless Rule.findOne({_id: Session.get("currentRuleID")}).hasResult

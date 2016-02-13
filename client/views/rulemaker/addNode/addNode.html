@@ -1,0 +1,21 @@
+<template name="addNodeModal">
+  <div class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Add A New Node to Diagram</h4>
+        </div>
+
+        <div class="modal-body" style="max-height:300px; overflow:auto;">
+          {{> palette}}
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-danger" data-dismiss="modal" id="cancelAddNodeBtn">Cancel</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</template>

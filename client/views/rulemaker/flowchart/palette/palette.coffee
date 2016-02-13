@@ -62,5 +62,9 @@ Template.palette.events
       else if newNode.klass is "Order"
         if t.posMatrix[2].length then t.posMatrix[2].shift() else [-50,300]
 
-    localNodes.insert newNode
+    localNodes.insert newNode, (err, id)->
+      unless err
+        toastr.success "Added a New Node to Diagram"
+      else
+        toastr.error "Couldn't add New Node: "+ err.reason
     # console.log localNodes.find().fetch()
