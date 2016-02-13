@@ -1,0 +1,39 @@
+/*** uncss> filename: custom.css ***/
+
+@media (max-width: 768px) {
+  #app-navbar.new-style.navbar-red .container-fluid {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  .left-menu .navbar-collapse {
+    height: auto;
+    border-top: 0;
+    box-shadow: none;
+    max-height: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .left-menu .navbar-collapse.collapse {
+    display: block !important;
+    width: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+
+  .left-menu .navbar-nav {
+    padding-left: 25px;
+  }
+
+  .left-menu .navbar-nav,
+  .left-menu .navbar-nav > li {
+    float: none !important;
+  }
+
+  .left-menu .navbar-nav>li>a {
+    padding: 5px 0px;
+  }
+}
+
