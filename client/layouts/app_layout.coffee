@@ -12,3 +12,6 @@ Template.app_layout.onCreated ->
 Template.app_layout.helpers
   readyToRoll: ->
     not Meteor.loggingIn() and Template.instance().subscriptionsReady()
+
+Template.app_layout.destroyed = ->
+  Session.set "currentRuleID", null

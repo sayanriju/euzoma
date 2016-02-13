@@ -84,13 +84,17 @@
             </li>
 
             <li>
-              <a href="http://euzoma.com/login/" class="header unregistered-user-action">Log In</a>
+              {{#if currentUser}}
+                <a href="/logout" class="header unregistered-user-action">Logout</a>
+              {{else}}
+                <a href="/" class="header unregistered-user-action">Log In</a>
+              {{/if}}
             </li>
             <li class="show-on-mobile">
               <a href="http://euzoma.com/accounts/register/" class="header unregistered-user-action">Sign Up</a>
             </li>
             <li>
-              <a class="new-btn transparent small sign-up-btn hidden-xs" href="http://euzoma.com/accounts/register/">
+              <a class="new-btn transparent small sign-up-btn hidden-xs" href="#">
           Sign Up
         </a>
             </li>
