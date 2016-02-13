@@ -1,5 +1,6 @@
 <template name="ruleMaker">
   <div class='col-lg-10 col-md-10 col-sm-9'>
+
     <div class="row">
       <h2 style="border-bottom: 1px solid black;">
         {{ruleName}}
@@ -37,16 +38,19 @@
       </span>
       <hr/>
     </div>
-  </div>
 
-  <div class="container-fluid">
     <div class='row'>
-      <div class='col-lg-3' id='palette'>
-        {{> palette}}
-      </div>
-      <div class='col-lg-9' id='diagram'>
+      <div class='col-lg-12' id='diagram'>
         {{> diagram}}
       </div>
+      <!-- <div class='col-lg-3' id='palette'>
+        {{> palette}}
+      </div> -->
     </div>
+
   </div>
+
+  <!-- <div class="container-fluid"> -->
+
+  <!-- </div> -->
 </template>

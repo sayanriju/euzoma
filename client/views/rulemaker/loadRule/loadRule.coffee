@@ -25,7 +25,7 @@ Template.loadRuleModal.events
 
   "click #loadSelectedRuleBtn, dblclick .list-group-item": (e, t) ->
     unless $(e.target).hasClass("disabled")
-      Session.set "ruleMaker.ruleID", t.selectedRule.get()
+      Session.set "currentRuleID", t.selectedRule.get()
       ## Empty the local nodes and edges , etc. etc.
       localNodes.remove({})
       localEdges.remove({})

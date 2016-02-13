@@ -1,12 +1,12 @@
 Template.app_layout.onCreated ->
-  Session.set "ruleMaker.ruleID", null
-  document.title = "Rule Maker"
+  Session.set "currentRuleID", null
+  # document.title = "Rule Maker"
   @autorun =>
     currentUser = Meteor.userId()
     if currentUser?
       @subscribe "myRules", {}
       @subscribe "myQueue"
-      # @subscribe "hasResult", Session.get("ruleMaker.ruleID")
+      # @subscribe "hasResult", Session.get("currentRuleID")
 
 
 Template.app_layout.helpers
