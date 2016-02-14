@@ -1,0 +1,45 @@
+<template name="addDataModal">
+  <div class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Add Some Data</h4>
+        </div>
+
+        <div class="modal-body" style="min-height:200px;max-height:300px; overflow:auto;">
+          <div class="row">
+            <div class='col-lg-8'>
+              {{> inputAutocomplete settings=settings id="legend" class="form-control" name="legend" placeholder="Legend" }}
+            </div>
+            <div class="col-lg-4">
+              <select class="period-select form-control">
+                <option value="week">WEEK</option>
+                <option value="day" selected="">DAY</option>
+                <option value="hour">HOUR</option>
+                <option value="5mm">5 Min</option>
+              </select>
+            </div>
+          </div>
+          {{#unless Template.subscriptionsReady}}
+          <div class='row'>
+            <div class="col-lg-12 text-center">
+              {{> spinner}}
+            </div>
+          </div>
+          {{/unless}}
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-danger" data-dismiss="modal" id="cancelAddNodeBtn">Cancel</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="autocompleteInstrument">
+  {{tcr}} : {{desc}} : NSE
+</template>
