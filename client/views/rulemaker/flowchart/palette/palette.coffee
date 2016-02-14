@@ -3,7 +3,7 @@ Template.palette_addableNode.onRendered ->
   # console.log $('#addableNodeList').size() #append("<span class='fa fa-plus' style='color:black;'></span>")
 
 Template.palette.onCreated ->
-  @objectsFromFactory = @subscribe "objectsFromFactory"
+  # @objectsFromFactory = @subscribe "objectsFromFactory"
   # @whichKlass = new ReactiveVar "Price"
   @posMatrix = [
     [ [25,30], [150,30], [275,30], [400,30] ] # Indictaor / Price

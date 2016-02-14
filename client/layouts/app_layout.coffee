@@ -1,5 +1,10 @@
 Template.app_layout.onCreated ->
   Session.set "currentRuleID", null
+
+  ## "Static" ("Factory") subscriptions moved in to here
+  @objectsFromFactory = @subscribe "objectsFromFactory"
+  @instrumentsFromFactory = @subscribe "instrumentsFromFactory"
+
   # document.title = "Rule Maker"
   @autorun =>
     currentUser = Meteor.userId()

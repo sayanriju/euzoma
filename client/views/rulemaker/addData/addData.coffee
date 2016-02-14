@@ -1,5 +1,5 @@
 Template.addDataModal.onCreated ->
-  @instrumentsFromFactory = @subscribe "instrumentsFromFactory"
+  # @instrumentsFromFactory = @subscribe "instrumentsFromFactory"
   @selectedData = null
 
 Template.addDataModal.helpers
