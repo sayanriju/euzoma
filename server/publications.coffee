@@ -2,6 +2,10 @@ Meteor.publish "objectsFromFactory", (args) ->
   # Meteor._sleepForMs 5000
   return objectFactory.find({}, {fields: {}})
 
+Meteor.publish "instrumentsFromFactory", (args) ->
+  # Meteor._sleepForMs 5000
+  return instrumentFactory.find({}, {fields: {}})
+
 Meteor.publish "myRules", (fields=null) ->
   if fields?
     return Rules.find({userId: @userId}, {fields: fields})
