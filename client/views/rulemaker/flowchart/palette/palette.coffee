@@ -64,7 +64,7 @@ Template.palette.events
 
     localNodes.insert newNode, (err, id)->
       unless err
-        toastr.success "Added a New Node to Diagram"
+        toastr.success "Added a New Node to Diagram", '', {timeOut:2000, "positionClass": "toast-bottom-right"}
       else
-        toastr.error "Couldn't add New Node: "+ err.reason
+        toastr.error "Couldn't add New Node: "+ err.reason, 'ERROR!!!', {"positionClass": "toast-bottom-right"}
     # console.log localNodes.find().fetch()
