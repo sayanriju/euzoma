@@ -6,6 +6,10 @@ FlowRouter.route '/rules',
   action: (params) ->
     # console.log params.ruleId
     BlazeLayout.render("app_layout", {page: "ruleMaker"});
+FlowRouter.route '/results',
+  action: (params) ->
+    # console.log params.ruleId
+    BlazeLayout.render("app_layout", {page: "showResults"});
 
 FlowRouter.route '/logout',
   action: (params) ->

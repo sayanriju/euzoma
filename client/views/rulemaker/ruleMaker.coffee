@@ -45,21 +45,36 @@ Template.ruleMaker.helpers
     Template.instance().savingRule.get()
   isRuleSaved: ->
     !! Session.get("currentRuleID")?
-  isInQueue: ->
-    Session.get("currentRuleID")? and Queue.find({ruleID: Session.get("currentRuleID")}).count()
-  isProcessing: ->
-    # return true
-    Session.get("currentRuleID")? and not Queue.find({ruleID: Session.get("currentRuleID")}).count() and not Rule.findOne({_id: Session.get("currentRuleID")}).hasResult
-  canViewResults: ->
-    Session.get("currentRuleID")? and Rule.findOne({_id: Session.get("currentRuleID")}).hasResult and not Queue.find({ruleID: Session.get("currentRuleID")}).count() and not Template.instance().addingToQueue.get()
+
+  showProcessingLabel: ->
+    Session.get("currentRuleID")? and Rules.findOne({_id: Session.get("currentRuleID")}).hasResult is false
+  showResultButton: ->
+    Session.get("currentRuleID")? and Rules.findOne({_id: Session.get("currentRuleID")}).hasResult is true
+  ########################################################################
+  # isInQueue: ->
+  #   Session.get("currentRuleID")? and Queue.find({ruleID: Session.get("currentRuleID")}).count()
+  # isProcessing: ->
+  #   # return true
+  #   Session.get("currentRuleID")? and not Queue.find({ruleID: Session.get("currentRuleID")}).count() and not Rule.findOne({_id: Session.get("currentRuleID")}).hasResult
+  # canViewResults: ->
+  #   Session.get("currentRuleID")? and Rule.findOne({_id: Session.get("currentRuleID")}).hasResult and not Queue.find({ruleID: Session.get("currentRuleID")}).count() and not Template.instance().addingToQueue.get()
 
 
 Template.ruleMaker.events
   "click #refreshForNew": (e, t) ->
     if localNodes.find().count() or localDataDesc.find().count()
       return false unless confirm "You will loose all Unsaved information! Continue?"
-    # Session.set "currentRuleID", null
-    location.reload()
+    ## Tabula Rasha!
+    Session.set "currentRuleID", null
+    localNodes.remove({})
+    localEdges.remove({})
+    localDataDesc.remove({})
+    localPrefs.remove({})
+    t.savingRule.set false
+    t.addingToQueue.set false
+
+    FlowRouter.go '/'
+    # location.reload()
     # console.log 'reloaded'
 
   "click #addDataDesc, click #addPrefs": (e, t) ->
@@ -80,9 +95,10 @@ Template.ruleMaker.events
 
   "click #viewResults": (e, t) ->
     unless $(e.target).hasClass("disabled")
-      unless Rule.findOne({_id: Session.get("currentRuleID")}).hasResult
+      unless Rules.findOne({_id: Session.get("currentRuleID")}).hasResult
         alert "Results not yet ready!"
-      window.open("google.com")
+      else
+        FlowRouter.go '/results'
 
   "click #loadRule": (e, t) ->
     Modal.show('loadRuleModal')
@@ -110,16 +126,20 @@ Template.ruleMaker.events
       ruleSaveObj.ruleID = Session.get("currentRuleID") if Session.get("currentRuleID")?
 
       Meteor.call "upsertRule", ruleSaveObj, (error, ruleID) ->
+        t.savingRule.set(false)
         if error
           console.log "error", error
-          t.savingRule.set(false)
         if ruleID
           Session.set "currentRuleID", ruleID
-          t.savingRule.set(false)
-          ## Add to queue
-          t.addingToQueue.set(true)
-          Meteor.call "addToQueue", ruleSaveObj, ruleID, (error, result) ->
+          ## Process this saved rule
+          Meteor.call "processRule", ruleID, (error, result) ->
             if error
-              console.log "error", error
-            # if result
-            t.addingToQueue.set(false)
+              console.log error
+
+          # ## Add to queue
+          # t.addingToQueue.set(true)
+          # Meteor.call "addToQueue", ruleSaveObj, ruleID, (error, result) ->
+          #   if error
+          #     console.log "error", error
+          #   # if result
+          #   t.addingToQueue.set(false)

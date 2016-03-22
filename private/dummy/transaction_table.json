@@ -1,0 +1,321 @@
+[ {
+ "Txn_Qty":      0,
+"Txn_Price":      0,
+"Txn_Fees":      0,
+"Txn_Value":      0,
+"Txn_Avg_Cost":      0,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 6053.5,
+"Txn_Fees":      0,
+"Txn_Value": 6.0535e+05,
+"Txn_Avg_Cost": 6053.5,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 6186.1,
+"Txn_Fees":    -20,
+"Txn_Value": -6.1861e+05,
+"Txn_Avg_Cost": 6186.1,
+"Net_Txn_Realized_PL":  13245 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 6779.4,
+"Txn_Fees":      0,
+"Txn_Value": -6.7794e+05,
+"Txn_Avg_Cost": 6779.4,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 6694.8,
+"Txn_Fees":    -20,
+"Txn_Value": 6.6948e+05,
+"Txn_Avg_Cost": 6694.8,
+"Net_Txn_Realized_PL":   8440 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 7108.8,
+"Txn_Fees":      0,
+"Txn_Value": 7.1087e+05,
+"Txn_Avg_Cost": 7108.8,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 7108.8,
+"Txn_Fees":    -20,
+"Txn_Value": -7.1087e+05,
+"Txn_Avg_Cost": 7108.8,
+"Net_Txn_Realized_PL":    -20 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 7631.7,
+"Txn_Fees":      0,
+"Txn_Value": -7.6317e+05,
+"Txn_Avg_Cost": 7631.7,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 7454.1,
+"Txn_Fees":    -20,
+"Txn_Value": 7.4541e+05,
+"Txn_Avg_Cost": 7454.1,
+"Net_Txn_Realized_PL":  17735 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 7526.6,
+"Txn_Fees":      0,
+"Txn_Value": -7.5266e+05,
+"Txn_Avg_Cost": 7526.6,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 7624.4,
+"Txn_Fees":    -20,
+"Txn_Value": 7.6244e+05,
+"Txn_Avg_Cost": 7624.4,
+"Net_Txn_Realized_PL":  -9795 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 7640.5,
+"Txn_Fees":      0,
+"Txn_Value": 7.6405e+05,
+"Txn_Avg_Cost": 7640.5,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 7795.8,
+"Txn_Fees":    -20,
+"Txn_Value": -7.7957e+05,
+"Txn_Avg_Cost": 7795.8,
+"Net_Txn_Realized_PL":  15510 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 7683.6,
+"Txn_Fees":      0,
+"Txn_Value": -7.6836e+05,
+"Txn_Avg_Cost": 7683.6,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 7911.9,
+"Txn_Fees":    -20,
+"Txn_Value": 7.9119e+05,
+"Txn_Avg_Cost": 7911.9,
+"Net_Txn_Realized_PL": -22840 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 7927.8,
+"Txn_Fees":      0,
+"Txn_Value": 7.9278e+05,
+"Txn_Avg_Cost": 7927.8,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 7991.7,
+"Txn_Fees":    -20,
+"Txn_Value": -7.9917e+05,
+"Txn_Avg_Cost": 7991.7,
+"Net_Txn_Realized_PL":   6375 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 8355.7,
+"Txn_Fees":      0,
+"Txn_Value": -8.3557e+05,
+"Txn_Avg_Cost": 8355.7,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 8292.9,
+"Txn_Fees":    -20,
+"Txn_Value": 8.2929e+05,
+"Txn_Avg_Cost": 8292.9,
+"Net_Txn_Realized_PL":   6255 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price":   8324,
+"Txn_Fees":      0,
+"Txn_Value": 8.324e+05,
+"Txn_Avg_Cost":   8324,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 8299.4,
+"Txn_Fees":    -20,
+"Txn_Value": -8.2994e+05,
+"Txn_Avg_Cost": 8299.4,
+"Net_Txn_Realized_PL":  -2480 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 8756.5,
+"Txn_Fees":      0,
+"Txn_Value": -8.7565e+05,
+"Txn_Avg_Cost": 8756.5,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 8633.2,
+"Txn_Fees":    -20,
+"Txn_Value": 8.6332e+05,
+"Txn_Avg_Cost": 8633.2,
+"Net_Txn_Realized_PL":  12320 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 8586.2,
+"Txn_Fees":      0,
+"Txn_Value": 8.5862e+05,
+"Txn_Avg_Cost": 8586.2,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 8780.3,
+"Txn_Fees":    -20,
+"Txn_Value": -8.7803e+05,
+"Txn_Avg_Cost": 8780.3,
+"Net_Txn_Realized_PL":  19390 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price":   8606,
+"Txn_Fees":      0,
+"Txn_Value": -8.606e+05,
+"Txn_Avg_Cost":   8606,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 8377.8,
+"Txn_Fees":    -20,
+"Txn_Value": 8.3777e+05,
+"Txn_Avg_Cost": 8377.8,
+"Net_Txn_Realized_PL":  22805 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price":   8097,
+"Txn_Fees":      0,
+"Txn_Value": 8.097e+05,
+"Txn_Avg_Cost":   8097,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 8423.2,
+"Txn_Fees":    -20,
+"Txn_Value": -8.4232e+05,
+"Txn_Avg_Cost": 8423.2,
+"Net_Txn_Realized_PL":  32605 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 8334.6,
+"Txn_Fees":      0,
+"Txn_Value": -8.3346e+05,
+"Txn_Avg_Cost": 8334.6,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 8130.6,
+"Txn_Fees":    -20,
+"Txn_Value": 8.1306e+05,
+"Txn_Avg_Cost": 8130.6,
+"Net_Txn_Realized_PL":  20375 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 8174.6,
+"Txn_Fees":      0,
+"Txn_Value": 8.1746e+05,
+"Txn_Avg_Cost": 8174.6,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 8360.8,
+"Txn_Fees":    -20,
+"Txn_Value": -8.3608e+05,
+"Txn_Avg_Cost": 8360.8,
+"Net_Txn_Realized_PL":  18605 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 8368.5,
+"Txn_Fees":      0,
+"Txn_Value": -8.3685e+05,
+"Txn_Avg_Cost": 8368.5,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price":   8337,
+"Txn_Fees":    -20,
+"Txn_Value": 8.337e+05,
+"Txn_Avg_Cost":   8337,
+"Net_Txn_Realized_PL":   3130 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 8532.8,
+"Txn_Fees":      0,
+"Txn_Value": 8.5328e+05,
+"Txn_Avg_Cost": 8532.8,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 8564.6,
+"Txn_Fees":    -20,
+"Txn_Value": -8.5646e+05,
+"Txn_Avg_Cost": 8564.6,
+"Net_Txn_Realized_PL":   3155 
+},
+{
+ "Txn_Qty":   -100,
+"Txn_Price": 8355.8,
+"Txn_Fees":      0,
+"Txn_Value": -8.3558e+05,
+"Txn_Avg_Cost": 8355.8,
+"Net_Txn_Realized_PL":      0 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 8518.5,
+"Txn_Fees":    -20,
+"Txn_Value": 8.5185e+05,
+"Txn_Avg_Cost": 8518.5,
+"Net_Txn_Realized_PL": -16290 
+},
+{
+ "Txn_Qty":    100,
+"Txn_Price": 8495.2,
+"Txn_Fees":      0,
+"Txn_Value": 8.4952e+05,
+"Txn_Avg_Cost": 8495.2,
+"Net_Txn_Realized_PL":      0 
+}
+]

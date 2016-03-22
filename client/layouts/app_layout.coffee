@@ -3,7 +3,7 @@ Template.app_layout.onCreated ->
 
   ## "Static" ("Factory") subscriptions moved in to here
   @objectsFromFactory = @subscribe "objectsFromFactory"
-  @instrumentsFromFactory = @subscribe "instrumentsFromFactory"
+  # @instrumentsFromFactory = @subscribe "instrumentsFromFactory"
 
   # document.title = "Rule Maker"
   @autorun =>

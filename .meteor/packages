@@ -37,3 +37,6 @@ check
 msavin:mongol
 http
 mizzao:autocomplete
+kadira:debug
+aslagle:reactive-table
+frozeman:persistent-minimongo2
