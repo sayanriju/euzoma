@@ -1,0 +1,29 @@
+<template name="editNodePropsModal">
+  <div class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Edit Node Properties</h4>
+          <span class='text-muted'>{{label}}</span>
+        </div>
+
+        <div class="modal-body" style="min-height:200px;max-height:300px; overflow:auto;">
+          <div class="row" style=''>
+            <div class='col-lg-8'>
+              <textarea autofocus id='editedJSON' style='background: black; color: white; height: 200px; min-width: 560px;'>
+{{propsJSON}}
+              </textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button id="saveEditedJson" class="btn btn-lg btn-primary">Save Edited Props</button>
+          <button type="button" class="btn btn-default btn-danger" data-dismiss="modal" id="cancelAddNodeBtn">Cancel</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</template>

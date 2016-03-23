@@ -24,7 +24,11 @@ Template.nodeContent.events
     }
 
   "click i.editProps": (e, t) ->
-    alert "Not Yet Implemented!"
+    # alert "Not Yet Implemented!"
+    Modal.show 'editNodePropsModal', ->
+      whichNode = Session.get "flowchart.diagram.currentNode"
+      # console.log  localNodes.findOne({_id: whichNode})?.props
+      return localNodes.findOne({_id: whichNode})
 
   "click i.connectNode": (e, t) ->
     e.stopPropagation()
