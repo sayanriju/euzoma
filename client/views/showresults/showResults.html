@@ -1,6 +1,6 @@
 <template name="showResults">
   <!-- <div class='col-lg-10 col-md-10 col-sm-9'> -->
-
+  {{#if isSubsReady}}
   <div class="row">
     <h2 style="border-bottom: 1px solid black;">
       {{ruleName}}
@@ -38,10 +38,9 @@
 
     </div>
   </div>
-
-  <!-- </div> -->
-
-  <!-- <div class="container-fluid"> -->
-
-  <!-- </div> -->
+  {{else}}
+  <div class='row' style='margin:10em auto;text-align:center;'>
+    {{> spinner}}
+  </div>
+  {{/if}}
 </template>

@@ -3,12 +3,17 @@ Template.addDataModal.onCreated ->
   @selectedData = null
 
 Template.addDataModal.helpers
+  hasDataDesc: ->
+    !! localDataDesc.find().count()
+  currentDataDesc: ->
+    localDataDesc.find({})
+
   settings: ->
     return {
       limit: 25
       rules: [
         {
-          collection: instrumentFactory
+          collection: 'instrumentFactory' ## String means server side collection
           field: 'desc'
           template: Template.autocompleteInstrument
         },
@@ -21,7 +26,7 @@ Template.addDataModal.helpers
 
 Template.addDataModal.events
   "autocompleteselect input": (e, t, doc)->
-    console.log 'selected ', doc
+    # console.log 'selected ', doc
     t.selectedData = doc
 
   "click #saveDataDesc": (e, t) ->

@@ -9,7 +9,7 @@ Template.app_layout.onCreated ->
   @autorun =>
     currentUser = Meteor.userId()
     if currentUser?
-      @subscribe "myRules", {}
+      @subscribe "myRules", {results: 0}
       @subscribe "myQueue"
       # @subscribe "hasResult", Session.get("currentRuleID")
 

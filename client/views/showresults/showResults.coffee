@@ -1,8 +1,14 @@
 Template.showResults.onCreated ->
+  @subsReady = new ReactiveVar()
+
   @autorun =>
     unless (Session.get("currentRuleID")? and Rules.findOne({_id: Session.get("currentRuleID")}).hasResult is true)
-      console.log 'No Results!!'
+      console.log '!!!!!!!!No Results!!!!!!!!'
       FlowRouter.go '/rules'
+
+    handle = subsManager.subscribe('singleRuleFull', Session.get("currentRuleID"));
+    @subsReady.set(handle.ready());
+
   #   @subscribe "hasResult", Session.get("currentRuleID")
 
   #   if Session.get("currentRuleID")?
@@ -30,6 +36,8 @@ Template.ruleMaker.onRendered ->
   $('[rel=tooltip]').tooltip({placement: 'auto bottom'})
 
 Template.showResults.helpers
+  isSubsReady: ->
+    Template.instance().subsReady.get()
   ruleName: ->
     if Session.get("currentRuleID")?
       Rules.findOne({_id: Session.get("currentRuleID")})?.name

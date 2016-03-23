@@ -11,6 +11,8 @@ Meteor.publish "myRules", (fields=null) ->
     return Rules.find({userId: @userId}, {fields: fields})
   else
     return Rules.find({userId: @userId})
+Meteor.publish "singleRuleFull", (ruleID) ->
+  return Rules.find({userId: @userId, _id: ruleID})
 
 Meteor.publish "myQueue", (fields=null) ->
   if fields?

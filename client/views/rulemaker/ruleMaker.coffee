@@ -1,6 +1,6 @@
 Template.ruleMaker.onCreated ->
   @savingRule = new ReactiveVar false
-  @addingToQueue = new ReactiveVar false
+  # @addingToQueue = new ReactiveVar false
   # @autorun =>
   #   @subscribe "hasResult", Session.get("currentRuleID")
 
@@ -95,9 +95,9 @@ Template.ruleMaker.events
 
   "click #viewResults": (e, t) ->
     unless $(e.target).hasClass("disabled")
-      unless Rules.findOne({_id: Session.get("currentRuleID")}).hasResult
-        alert "Results not yet ready!"
-      else
+      # unless Rules.findOne({_id: Session.get("currentRuleID")}).hasResult
+        #alert "Results not yet ready!"
+      # else
         FlowRouter.go '/results'
 
   "click #loadRule": (e, t) ->

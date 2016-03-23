@@ -11,6 +11,6 @@ Template.results_tables.helpers
   formatTableName: (name)->
     name.replace(/_/g,' ').toUpperCase()
   getTableData: ()->
-    console.log this
+    # console.log this
     # console.log Rules.findOne({_id: Session.get("currentRuleID")})?.results[this]
     return Rules.findOne({_id: Session.get("currentRuleID")})?.results[this]

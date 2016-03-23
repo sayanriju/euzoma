@@ -21,6 +21,33 @@
               </select>
             </div>
           </div>
+
+          {{#if hasDataDesc}}
+          <div class='row' style='margin-top:1em;'>
+            <div class='col-lg-12'>
+              <table class='table table-striped table-condensed table-responsive'>
+                <caption><strong>Currently Added Instruments:</strong></caption>
+                <thead>
+                  <tr>
+                    <th>TCR</th>
+                    <th>Description</th>
+                    <th>Periodicty</th>
+                  </tr>
+                </thead>
+                <tbody>
+                {{#each currentDataDesc}}
+                  <tr>
+                    <td>{{instrument.tcr}}</td>
+                    <td>{{instrument.desc}}</td>
+                    <td>{{periodicity}}</td>
+                  </tr>
+                {{/each}}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          {{/if}}
+
           {{#unless Template.subscriptionsReady}}
           <div class='row'>
             <div class="col-lg-12 text-center">
